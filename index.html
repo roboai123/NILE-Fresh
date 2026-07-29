@@ -1,16 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NILE Fresh</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NILE Fresh</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
 
-    <h1>Welcome to NILE Fresh 🌿</h1>
+<!-- Header -->
 
-    <script src="script.js"></script>
+<header>
+
+<div class="logo">
+🌿 NILE Fresh
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Fruits</a>
+<a href="#">Vegetables</a>
+<a href="#">Dairy</a>
+<a href="#">Groceries</a>
+<a href="#">Contact</a>
+</nav>
+
+<div class="icons">
+
+<input
+type="text"
+id="searchBox"
+placeholder="Search Products">
+
+<button onclick="searchProducts()">
+<i class="fa-solid fa-search"></i>
+</button>
+
+<i class="fa-regular fa-heart"></i>
+
+<i class="fa-solid fa-user"></i>
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+</div>
+
+</header>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<h1>
+Fresh Fruits & Vegetables
+Delivered To Your Door
+</h1>
+
+<p>
+Farm Fresh • Organic • Fast Delivery
+</p>
+
+<button onclick="shopNow()">
+Shop Now
+</button>
+
+</section>
+
+<!-- Categories -->
+
+<section class="section">
+
+<h2>Popular Categories</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?w=500" alt="">
+<div class="card-content">
+<h3>🍎 Fresh Fruits</h3>
+<p>Sweet and healthy fruits.</p>
+<button>Add to Cart</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500" alt="">
+<div class="card-content">
+<h3>🥕 Vegetables</h3>
+<p>Fresh farm vegetables.</p>
+<button>Add to Cart</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=500" alt="">
+<div class="card-content">
+<h3>🥛 Dairy</h3>
+<p>Milk, Butter & Cheese.</p>
+<button>Add to Cart</button>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- Today's Deals -->
+
+<section class="section">
+
+<h2>🔥 Today's Deals</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=500" alt="">
+<div class="card-content">
+<h3>Apples</h3>
+<div class="price">₹120 / kg</div>
+<button onclick="addToCart('Apples')">
+Add to Cart
+</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=500" alt="">
+<div class="card-content">
+<h3>Bananas</h3>
+<div class="price">₹60 / dozen</div>
+<button onclick="addToCart('Bananas')">
+Add to Cart
+</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1447175008436-170170753d52?w=500" alt="">
+<div class="card-content">
+<h3>Carrots</h3>
+<div class="price">₹45 / kg</div>
+<button onclick="addToCart('Carrots')">
+Add to Cart
+</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=500" alt="">
+<div class="card-content">
+<h3>Mangoes</h3>
+<div class="price">₹180 / kg</div>
+<button onclick="addToCart('Mangoes')">
+Add to Cart
+</button>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- Features -->
+
+<section class="section">
+
+<h2>Why Choose NILE Fresh?</h2>
+
+<div class="products">
+
+<div class="card">
+<div class="card-content">
+<h3>🚚 Free Delivery</h3>
+<p>Free delivery on eligible orders.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content">
+<h3>💳 Secure Payment</h3>
+<p>Safe online payment methods.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content">
+<h3>📞 24×7 Support</h3>
+<p>We're here whenever you need help.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 NILE Fresh | Fresh Fruits & Vegetables Delivered Daily</p>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
